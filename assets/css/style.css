@@ -1,7 +1,124 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css")
-@import url ("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap");
 
+html,
 body {
-    font-family: 'Roboto';
+  font-family: "Montserrat", "Roboto";
+  /* width: 100%; */
+  min-width: 750px;
+}
+
+* {
+  box-sizing: border-box;
+  border: 1px solid red;
+}
+
+.container {
+  /* border: 1px solid red; */
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+  min-width: 750px;
+}
+
+.page-content {
+  display: flex;
+  color: black;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  font-size: 0.7rem;
+  margin-top: 1rem;
+}
+
+.page-content > div {
+  /* width: 200px; */
+}
+
+.page-content > div:first-child {
+  flex: 1 1 auto;
+  min-width: 250px;
+}
+.page-content > div:nth-child(2) {
+  flex: 2 1 auto;
+  min-width: 500px;
+}
+
+.page-header {
+  background: #23384e;
+  color: white;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.page-header h1,
+h2 {
+  margin: 0 0 5px 0;
+  font-weight: 300;
+}
+
+.side-content,
+.main-content {
+  padding-right: 0rem;
+}
+
+.side-content *,
+.main-content * {
+  margin: 0;
+  line-height: 1.2rem;
+}
+
+.side-content-header,
+.main-content-header {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.side-section,
+.main-section {
+  margin-bottom: 0.8rem;
+}
+
+.side-section ul,
+.main-content ul {
+  /* padding-left: 16px; */
+  list-style: none;
+  padding-left: 0;
+}
+
+.side-section span,
+.main-section span {
+  display: inline-block;
+}
+
+.bullet {
+  font-size: 1.2rem;
+  margin-right: 0.4rem;
+}
+
+.side-section li,
+.main-section li {
+  display: flex;
+}
+
+.side-section h5,
+.main-section h5 {
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+.main-content,
+.side-content {
+  align-self: flex-start;
+}
+
+.employer-info {
+  font-style: italic;
 }
